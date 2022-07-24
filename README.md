@@ -1,26 +1,22 @@
 # Dr. Alberto Morini
 
-Born in June of 1999, doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31).
-<br>Cinema enthusiast, coffee lover and HipHop expert. Nerd on my free time, fitness lover 24/7.
+Born in June of 1999, doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31). <br>
+Cinema enthusiast, coffee lover and HipHop expert.
+Nerd on my free time, fitness lover 24/7.
 
 
 ## Knowledges:
 
+**Languages**: IT/EN
 
-<b>Languages</b>: IT/EN
-
-<br>
-<br>
-<b>Computer Science favourite topics (w/ experiences)</b>:
-    <ul>
-        <li>Full-stack (NodeJS, ReactJS/ReactNative, Apache Cordova)</li>
-        <li>Data science (R, Python)</li>
-        <li>Web Serivices (SOAP/REST)</li>
-        <li>Unix (MacOS, Linux)</li>
-        <li>Networking and cybersecurity (Wireshark, PiHole)</li>
-        <li>Self-host software (PLEX, Jellyfin, NextCloud, Sonarr)</li>
-        <li>SQL (mySql, Postgresql)</li>
-    </ul>
+**Computer Science favourite topics** *(w/ experiences)*:
+- Full-stack *(NodeJS, ReactJS/ReactNative, Apache Cordova)*
+- Data science *(R, Python)*
+- Web Serivices *(SOAP/REST)*
+- Unix *(MacOS, Linux)*
+- Networking and cybersecurity *(Wireshark, PiHole)*
+- Self-host software *(PLEX, Jellyfin, NextCloud, Sonarr)*
+- SQL *(mySql, Postgresql)*
 
 
 ## Contact me
