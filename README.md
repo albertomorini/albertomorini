@@ -4,6 +4,8 @@ Born in June of 1999, doctor in Internet Of Things, Big Data & Web at University
 Cinema enthusiast, coffee lover and HipHop expert.
 Nerd on my free time, fitness lover 24/7.
 
+<a href='https://github.com/albertomorini/docs/cv_AlbertoMorini-eng.pdf'> Download my CV</a>
+
 
 ## Knowledges:
 
