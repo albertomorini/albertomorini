@@ -1,10 +1,15 @@
 # Dr. Alberto Morini
 
-Born in June of 1999, doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31). <br>
-Cinema enthusiast, coffee lover and HipHop expert.
-Nerd on my free time, fitness lover 24/7.
+♊️ Born in June of 1999  <br/>
+🎓 Doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31). <br/>
+🎬 Cinema enthusiast <br/>
+☕️ Coffee lover <br/>
+💿 HipHop expert. <br/>
+💻 Nerd on my free time <br/>
+🏓 Fitness lover 24/7. <br/>
 
 <a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> Download my CV</a>
+
 <a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> Scarica il mio CV</a>
 
 
