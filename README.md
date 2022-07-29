@@ -8,9 +8,9 @@
 💻 Nerd on my free time <br/>
 🏓 Fitness lover 24/7. <br/>
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> 🇬🇧 Download my CV</a>
+<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> 🇬🇧 View my CV</a>
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> 🇮🇹 Scarica il mio CV</a>
+<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> 🇮🇹 Guarda il mio CV</a>
 
 
 ## Knowledges:
