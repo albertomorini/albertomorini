@@ -5,6 +5,7 @@ Cinema enthusiast, coffee lover and HipHop expert.
 Nerd on my free time, fitness lover 24/7.
 
 <a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> Download my CV</a>
+<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> Scarica il mio CV</a>
 
 
 ## Knowledges:
