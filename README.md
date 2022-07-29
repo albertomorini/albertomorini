@@ -8,16 +8,16 @@
 💻 Nerd on my free time <br/>
 🏓 Fitness lover 24/7. <br/>
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> Download my CV</a>
+<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> 🇬🇧 Download my CV</a>
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> Scarica il mio CV</a>
+<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> 🇮🇹 Scarica il mio CV</a>
 
 
 ## Knowledges:
 
 **Languages**: IT/EN
 
-**Computer Science favourite topics** *(w/ experiences)*:
+**IT favourite topics** *(w/ experiences)*:
 - Full-stack *(NodeJS, ReactJS/ReactNative, Apache Cordova)*
 - Data science *(R, Python)*
 - Web Serivices *(SOAP/REST)*
