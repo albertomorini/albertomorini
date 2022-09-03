@@ -18,7 +18,7 @@
 **Languages**: IT/EN
 
 **IT favourite topics** *(w/ experiences)*:
-- Full-stack *(NodeJS, ReactJS/ReactNative, Apache Cordova)*
+- Full-stack *(NodeJS, ReactJS/ReactNative, Ionic, Apache Cordova)*
 - Data science *(R, Python)*
 - Web Serivices *(SOAP/REST)*
 - Unix *(MacOS, Linux)*
