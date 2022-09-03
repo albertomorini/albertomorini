@@ -82,11 +82,12 @@ My fav.
 *es*:*Tirando una moneta per 3 volte, esce tutte le volte 'testa', quindi tu (erroneamente) pensi che alla 4th volta testa avrà probabilità minore*
 
 
-## SIMSPON'S PARADOX
+## SIMPSON'S PARADOX
 
 **ENG**: When a trend shows up on different subset of a dataset, but disappear or viceversa when the groups are combinated
 *eg*: *On an univesity's application the percentage of ammission is 41% (of 12,763 people), which are 44% (of 8,442) males and for females there's a percentage of 35% (of 4,321).... 44 and 35 are closer to 41 but way off compared gender to gender.*
 
+![Simpson](img/SIMPSON.jpg)
 
 ## PUBLICATION BIAS
 **ENG**:Interesting research findings are more likely to be published, distorting our impression of reality
@@ -100,7 +101,7 @@ My fav.
 ## GERRYMANDERING
 **ENG**: Manilupating the "geographical" boundaries used to group data in order to change the result.
 *eg*: *We have a dataset of 20 people, voting for red or for black. Next we have to divide the dataset making group of 5 people.. Changing the boundaries we can totally change the result, event with very different numbers (8for black and 12 for red)* 
-![img](GERRYMANDERING.jpg)
+![img](img/GERRYMANDERING.jpg)
 
 
 ## HAWTRONE EFFECT
