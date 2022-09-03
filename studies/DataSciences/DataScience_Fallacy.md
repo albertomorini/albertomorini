@@ -100,6 +100,7 @@ My fav.
 ## GERRYMANDERING
 **ENG**: Manilupating the "geographical" boundaries used to group data in order to change the result.
 *eg*: *We have a dataset of 20 people, voting for red or for black. Next we have to divide the dataset making group of 5 people.. Changing the boundaries we can totally change the result, event with very different numbers (8for black and 12 for red)* 
+![img](GERRYMANDERING.jpg)
 
 
 ## HAWTRONE EFFECT
