@@ -12,7 +12,7 @@ Language:
 -----
 
 
-## Cherry Picking
+## CHERRY PICKING
 
 **eng:** Is picking a slice of data that fit the claim ignoring the bigger picture or the data that bring us different results.
 Usually ignoring the entire dataset.
@@ -26,10 +26,7 @@ Spesso ignorando l'intero set di dati.
 
 
 
-
-
-
-## Sampling Bias
+## SAMPLING BIAS
 
 **eng**: Creating an assumption based on a favorite/unfavorite sample of the entire dataset.
 
@@ -40,7 +37,7 @@ Spesso ignorando l'intero set di dati.
 *es*:*sondiamo a quanti studenti universitari piaccia l'hip/hop chiedendolo in un'aula.. Non possiamo assumere che a x% degli studenti univesitari piaccia l'hip/hop perché abbiamo chiesto a una sola classe e non all'intera università*
 
 
-## Regression towards the mean
+## REGRESSION TOWARDS THE MEAN
 
 **eng**: When we assume something based on a past event.
 *eg*:*A basketball team wins the championship, the next year we can't assume it will win again, even if has a top coach etc., because in the long run there are a lot of other factors (drug scandals of players etc.)*
@@ -48,14 +45,14 @@ Spesso ignorando l'intero set di dati.
 **it**: Quando assumiamo qualcosa basandoci su un evento del passato.
 *es*:*Una squadra di basket vince un campionato, il prossimo anno non possiamo assumere che vincerà di nuovo, seppur ha un coach bravissimo etc., perché alla lunga ci sono tanti altri fattori (scandali legati dalla droga dei giocatori, etc.)*
 
-## Overfitting
+## OVERFITTING
 
 **eng**: When a model is too faithful/close to the test dataset and probably will fail on another dataset.
 
 **it**: Quando un modello è troppo fedele/legato al dataset di test, quindi potrebbe fallire con un altro dataset.
 
 
-## Data dredging (p-hacking/data snooping)
+## DATA DREDGING
 
 **eng**: forcing a correlation of two different hypothesis basing on the similarity of the dataset.
 *eg*: *Number of people that like HipHop is the same number of people who's like icecream... No correlation between these two hypothesis, but if we have a dataset with similar numbers we (wrongly) assume it*
@@ -64,7 +61,7 @@ Spesso ignorando l'intero set di dati.
 *it*: *Numero di persone a cui piace l'HipHop è lo stesso di quello a cui piace il gelato... Non vi è correlazione tra le due ipotesi, ma se abbiamo un sataset con una somiglianza dei numeri, potremmo (erroneamente) forzare la teoria*
 
 
-## False Casuality
+## FALSE CASUALITY
 
 **eng**: assuming that two event apparently tied are incluenced between each other or one is the cause of another. 
 *eg*: *after installed a new software your pc crash, so you assume that the program is the cause... Which could be possible, but we can't be sure of that (eg. faulty component, crappy operating system like windows, etc.)*
