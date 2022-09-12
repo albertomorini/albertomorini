@@ -19,6 +19,10 @@ Anyways, use `Docker command --help` for the complete list.
 With `docker ps`  we can see all the container running on our machine.
 To stop one: 'docker stop $ContainerID' 
 
+### List all images
+List all the pulled image `docker image ls`
+
+
 ### Example
 
 1. ` docker pull jellyfin/jellyfin:latest`  
