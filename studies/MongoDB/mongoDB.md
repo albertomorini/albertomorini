@@ -4,7 +4,7 @@ A source available, cross platform, NoSQL solution; MongoDB does not require a r
 Stores data in JSON-like documents, making the database flexible and scalable.
 ## IMPORTANT
 
-- **Methods and operation** are showed into testCode.py.
+- **Methods and operation** are showed into testCode.py, just the mainly ones (you can find a lot more customization, like joins etc).
 - **Primary key**: for each collection there is the "_id" attributed, used as primary key.
 - **Creating DB/Collection**: Mongo doesn't create a Database and/or a collection (table) untill it gets content.
 
