@@ -15,7 +15,8 @@ def checkCollectionExists():
     if "customers" in collist:
         print("The collection exists.")
 
-## INSERT
+
+##### INSERT
 def insertMultipleCustomer():
 
     mylist = [
@@ -45,7 +46,7 @@ def insertSingleCustomerSpecificID():
     x = mycol.insert_one(customer)
 
 
-## FIND/SELECT
+##### FIND/SELECT
 
 def findOne():
 
@@ -73,10 +74,58 @@ def findAll():
     #########################à
 
 
+##### QUERY
+
+def queryFind():
+    myquery = { "address": "Park Lane 38" }
+    
+    #myquery = { "address": {"$gt":"S"} } #started with S (gt=greater than)
+    #myquery = { "address": {"$regex":"^S"} } #or w/ Regular Expression
+
+    mydoc = mycol.find(myquery)
+    for x in mydoc:
+        print(x)
+
+
+##### UPDATE
+
+def updateSingle():
+    myquery = { "address": "Valley 345" }
+    newvalues = { "$set": { "address": "Canyon 123" } }
+
+    mycol.update_one(myquery, newvalues)
+    #print costumer after update
+    for x in mycol.find():
+        print(x)
+
+def updateMany():
+    myquery = { "address": { "$regex": "^S" } }
+    newvalues = { "$set": { "name": "Minnie" } }
+
+    x = mycol.update_many(myquery, newvalues)
+
+    print(x.modified_count, "documents updated.")
 
 
 
+##### DELETE/DROP
 
+def deleteElement():
+
+    myquery = { "address": "Mountain 21" }
+    mycol.delete_one(myquery)
+
+def deleteManyElem():
+    myquery = { "address": {"$regex": "^S"} }
+    x = mycol.delete_many(myquery)
+    print(x.deleted_count, " documents deleted.")
+
+    ## OR delete all from collection with:
+    #x = mycol.delete_many({})
+    #print(x.deleted_count," documents deleted.")
+
+def dropCollection():
+    mycol.drop()
 
 
 def main():

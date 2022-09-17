@@ -1,9 +1,15 @@
 # MongoDB 
-Source available, cross platform.
+A source available, cross platform, NoSQL solution; MongoDB does not require a relational database management system, so provides an elastic data storage model, that enables users to store and query multivariate data types.
 
-Stores data in JSON-like documents, making the database flexible and scalable.<br>
-**IMPORTANT**: Be careful, in Mongo doesn't create a Database and/or a collection (table) untill it gets content.
+Stores data in JSON-like documents, making the database flexible and scalable.
+## IMPORTANT
 
+- **Methods and operation** are showed into testCode.py.
+- **Primary key**: for each collection there is the "_id" attributed, used as primary key.
+- **Creating DB/Collection**: Mongo doesn't create a Database and/or a collection (table) untill it gets content.
+
+
+![mongoDB](img/MongoDB.jpg)
 
 ## NoSQL: 
 
@@ -53,6 +59,9 @@ The data is splitted into ranges (based on the key) and distribuited across mult
 - *Mongo DB Community Server*: free and available for mac/windows/linux
 - *Mongo DB Enterprise Server*: you need a MongoDB enterprise advanced subscription
 - *Mongo DB Atlas*: runs on AWS, Microsoft azure, Google Cloud Platform.
+
+
+
 
 ## Usage, w/ Docker
 $ docker run -d -p 27017:27017 --name myMongo -v mongo-data:/data/db mongo:latest
