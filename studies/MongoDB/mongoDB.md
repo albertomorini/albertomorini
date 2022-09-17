@@ -1,7 +1,7 @@
 # MongoDB 
 Source available, cross platform.
 
-Stores data in JSON-like documents, making the database flexible and scalable.
+Stores data in JSON-like documents, making the database flexible and scalable.<br>
 **IMPORTANT**: Be careful, in Mongo doesn't create a Database and/or a collection (table) untill it gets content.
 
 
@@ -55,4 +55,4 @@ The data is splitted into ranges (based on the key) and distribuited across mult
 - *Mongo DB Atlas*: runs on AWS, Microsoft azure, Google Cloud Platform.
 
 ## Usage, w/ Docker
-$ docker run --name mongodb -d -p 27017:27017 mongo
+$ docker run -d -p 27017:27017 --name myMongo -v mongo-data:/data/db mongo:latest
