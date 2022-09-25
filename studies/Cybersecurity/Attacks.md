@@ -17,3 +17,23 @@ With UPD is harder, because most of UPD applications will not replay unless they
 Then, an attacker *might* not discover a port open. 
 
 ![portScan](img/portScan.jpg)
+
+## Web application
+
+### SQL injection
+A webapp with an input field or similar needs to check the data inserted by user/attackers, because if the value is a query the web app might process it, provoking a lot of damnage.
+
+*Example*: 
+An attacker can easily get/update/insert/delete data without limit by simply writing a query on an input field.
+![sqlInjection](img/sqlInj.jpg)
+
+
+### XSS attack
+The server simply reflect the attackers values, usually JavaScript, against visitors who run the attackers data in their own browser.
+
+*Example*:
+Eve sends to Alice a url with an evil script inject, the script will be executed by Alice browser as soon as the server will responds.
+
+
+
+
