@@ -41,7 +41,7 @@ Attackers create a panic scenario, pushing the victim into a state of confusion 
 For example, attackers by a phone call warns there is a dangerous virus which infect all pc that revieve a specific email (previously sent by the attackers), then, attackers push the victim into install an "antivirus" (which is a trojan).
 
 
-## \#6. Phishing
+## \#. Phishing
 
 Phishing is a quite known technique, where attackers will try to coerce victim into giving away sensitive details such as their credentials or have them install malicious applications.
 
