@@ -33,7 +33,3 @@ The server simply reflect the attackers values, usually JavaScript, against visi
 
 *Example*:
 Eve sends to Alice a url with an evil script inject, the script will be executed by Alice browser as soon as the server will responds.
-
-
-
-
