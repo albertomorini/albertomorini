@@ -13,14 +13,12 @@ function Container(props){
         let strQuery = encodeURIComponent(ev.target.value);
         if (strQuery != "") {
             fetch("https://api.genius.com/search?q=strQuery", {
-                credentials: "omit",
                 method: "GET",
+                mode: "cors",
                 headers:{
                     'Authorization': 'Bearer Fbn65vLE84Ji1Le4hZaZmjXbsUHrvV64ZgLdml3qEcwIMr8z0cPj6dBL8fDy_TJE',
                     'Content-Type': 'application/json',
-                    'Control-Allow-Origin': "*"
                 },
-                mode: "cors",
             }).then(response => {
                 console.log(response);
                 response.data.response.hits.forEach(singolo => {

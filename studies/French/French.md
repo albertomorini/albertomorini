@@ -149,3 +149,33 @@ Femminine: -e / -es
 
 ## Sentence structure
 
+Like english: SVO (Subject Verbs Object) structures.
+*eg*: I eat apple -> Je mange des pommes
+
+### Common question words
+- How -> Comment
+- What -> Que / Qu'est-ce que que
+- What kind -> Quel genre
+- When -> Quand
+- Where -> Où
+- Why -> Pourquoi
+
+For a question you can also changing the order of the verb and pronoun, and connect them with a hypen:
+*eg*: Can you help up? -> Pouvez-vous nous aider?
+
+### Conjunction
+
+#### Coordinating conjunction
+- and -> et
+- because -> parce que
+- then -> puis
+- or -> ou
+- but -> mais
+
+#### Subordinating conjunction
+- if -> si
+- since -> comme
+- that -> que
+
+
+
