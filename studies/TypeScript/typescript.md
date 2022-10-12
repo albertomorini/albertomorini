@@ -2,6 +2,8 @@
 
 JavaScript with data type.
 
+Created by Microsoft 🤮, but the language is cool to use!
+
 - Can be converted into JavaScript so it can be runned everywhere JavaScript can be run.
 > anyway has a compiler: `$ npm -i typescript; npx tsc` -> print the verison
 
@@ -77,6 +79,7 @@ let head: number = arr[0]; //OK
 ```
 ---------------------
 ## Tuples
+
 Allows multi type of data into a set.
 ```ts
 let myTuple = [number, boolean, string]
@@ -91,4 +94,31 @@ myTuple=[5,true,"Albyy"];
 const user: [name: string, age: number] = ["alby",23];
 //destructuring
 const [n,a]= user;
+```
+
+-----
+## Objects
+```ts
+const album: { 
+    name: string,
+    artist: string,
+    year: number
+}= {"Nectar","Joji",2019};
+album.name='Ballads 1' //ok
+album.name=2018 //error
+```
+### Optional props
+```ts
+const album: { 
+    name: string,
+    artist: string,
+    year: number
+}= {"Nectar","Joji"}; //ERROR-> missing year
+
+const album2:{
+    name: string,
+    artist: string,
+    year? : number
+}= {"Views","Drake"}; //OK
+album2.year=2016; //OK
 ```
