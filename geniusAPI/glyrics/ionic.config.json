@@ -1,0 +1,7 @@
+{
+  "name": "glyrics",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
