@@ -344,14 +344,150 @@ class Realone extends Abs{
     }
 }
 ```
---------
 
+---------
+## Generics
 
+### functions
+```ts
+function createPair<S,T>(v1: S, v2: T): [S,T]{
+    return [v1,v2]
+}
+console.log(createPair<string,number>('hello',22)); //['hello',22]
+```
+### classes
+```ts
+class NameValue<T>{
+    private _val: T | undefined;
+    constructor(private name: string){}
 
+    public setValue(value:T){
+        this._val=value;
+    }
+    public toString(): string{
+        return `{this.name}: ${this._val}`;
+    }
+}
+let val = new NameValue<number>('myNumber');
+val.setValue(10)
+console.log(value.toString()); //myNumber: 10
+```
+### type aliases
+```ts
+type Wrapped<T> = {value: T};
+const wrappedValue: Wrapped<number> = {value:10}
+```
 
+## Utility type
 
+- **Partial**: changes all the properties in an object making them optional
+```ts
+interface Point{
+    x: number;
+    y: number;
+}
+let pointPartial: Partial<Point> = {};
+pointPartial.x=10; 
+```
+- **Required**: changes the properties in an object making them required
+```ts
+interface Car {
+  make: string;
+  model: string;
+  mileage?: number;
+}
 
+let myCar: Required<Car> = {
+  make: 'Ford',
+  model: 'Focus',
+  mileage: 12000 // `Required` forces mileage to be defined
+};
+```
+- **Record**: is a shortcut to defining an object type with a specific key type and value type
+```ts
+const user: Record<string,number>={
+    'name': 'Alby';
+    'age': 23;
+}
+```
+- **Omit**: removes keys from an object type
+```ts
+interface Person {
+  name: string;
+  age: number;
+  location?: string;
+}
 
+const bob: Omit<Person, 'age' | 'location'> = {
+  name: 'Bob'
+  // `Omit` has removed age and location from the type and they can't be defined here
+};
+```
+- **Parameters**: extracts the parameter type of a function type as an array
+```ts
+type PointPrinter= (p:{x:number,y:number;})=> void;
+let point: Parameters<PointPrinter>[0]={
+    x: 10,
+    y:20
+};
+```
+
+------
+
+## Keyof
+Extract the key type from an object
+```ts
+interface User{
+    name: string;
+    age: number;
+}
+//keyof create union type of "name" and "age"
+function printProperty(user: User, prop: keyof User){
+    console.log(`${prop}:${User[prop]}`);
+}
+let u = {
+    name: "alby";
+    age: 23;
+}
+printProperty(u,"name"); //name: alby
+```
+
+## Null & Undefined
+by default, are disabled ->set  'strictNullChecks': true;
+
+### Optional chaining
+allows accessing properties on an object, that may not exists, using '?.' operator
+```ts
+interface House {
+  sqft: number;
+  yard?: {
+    sqft: number;
+  };
+}
+function printYardSize(house: House) {
+  const yardSize = house.yard?.sqft;
+  if (yardSize === undefined) {
+    console.log('No yard');
+  } else {
+    console.log(`Yard is ${yardSize} sqft`);
+  }
+}
+
+let home: House = {
+  sqft: 500
+};
+
+printYardSize(home); // Prints 'No yard'
+```
+
+### nullish coalescence
+```ts
+function f(par: number | null | undefined){
+    console.log(`${par?? 'empty'}` );
+}
+f(null) //empty;
+f(23) //23
+```
 
 
 
