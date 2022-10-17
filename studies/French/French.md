@@ -177,5 +177,47 @@ For a question you can also changing the order of the verb and pronoun, and conn
 - since -> comme
 - that -> que
 
+------
+## Forming and asking question
+
+We're going in the right direction, right? -> Nous allons dans bonne direction, n'est-ce-pas?
+We had a great time, didn't we? -> Nous avons passé un très bon moment, n'est-ce-pas?
+
+Did he leave? -> Est-il parti?
+
+## Pronouns and adjectives
+
+![which](whichInFrench.jpg)
+
+### generes
+
+which books is yours? -> quel livre est le tien?
+which blanket do you want? -> quelles couverture veux-tu?
+which one is yours? -> Lequel est à too?
+which one do you want? -> Laquelle veux-tu?
+
+who's there? -> Qui est là?
+whom did you visit? -> A' qui avez-vous rendu visite?
+whose car is that? -> A' qui est cet voiture?
+
+what's going on? -> Qu'est-ce qui se passe?
+what did you said? -> Qu'est-ce que vous avez dit?
+
+
+### Useful question
+
+How much does it cost? -> Combien ça coûte ?
+How do you get to town? -> Comment arrivez-vous en ville?
+When doest the train arrive? -> Quand arrive le train?
+Why you are upset? -> Pourquoi es-tu agacé?
+
+### Forming negative sentence
+
+I don't want food -> je ne veux pas de nouritture
+I didn't walk far -> je n'ai pas marché loin
+
+    
+
+
 
 
