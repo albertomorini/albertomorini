@@ -95,3 +95,149 @@ urlpatterns = [
 ]
 ```
 `py manage.py runserver` => 127.0.0.1:8000/myapp
+
+## Models
+Using SQLite db
+
+```python
+from django.db import models
+
+class Users(models.Model):
+    username= models.CharField(max_lenght=10);
+    password= models.CharField(max_lenght=512);
+    
+```
+Then: `python manage.py makemigrations users`
+
+```sql
+CREATE TABLE "users_users"(
+    "id" INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "username" varchar(10) NOT NULL,
+    "password" varchar(512) NOT NULL
+);
+```
+
+### Queries
+```python
+from users.models import Users 
+Users.objects.all() #returns an empty queryset
+user = Users(username='alby',password=':)')
+user.save()
+
+Users.objects.all().values() #QuerySet [{'id}:1,'username':'alby'...]
+
+```
+Show the results in browser:
+```python
+from django.http import HttpResponse
+from django.template import loader
+
+def idnex(request):
+    template= loader.get_template('page.html')
+    HttpResponse(template.render())
+```
+And the views.py has to be like:
+```python
+from django.http import HttpResponse
+from django.template import loader
+from .models import Users
+
+def index(request):
+  myUsers = Users.objects.all().values()
+  output = ""
+  for x in myUsers:
+    output += x["username"]
+  return HttpResponse(output)
+```
+
+
+
+## Templates
+
+All the templates must be located in the templates folder.
+
+```html
+<h1>My page</h1>
+<table border="1">
+    {%for x in myusers %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.user}}</td>
+          <td><a href="delete/{{ x.id }}">delete</a></td>
+    </tr>
+    {%endfor%}
+</table>
+```
+
+modify the view.pp
+```python
+from django.http import HttpResponse
+from django.template import loader
+from .model import Members
+
+def index(request):
+    myUser = Users.objects.all().values()
+    template = laoder.get_template('page.html')
+    contex = {
+        'myuser':myUsers,
+    }
+    return HttpResponse(template.render(context, request))
+```
+
+## Add/delete/update records
+
+### adding/delete
+```html
+<form action="addrecord/" method="post">
+{% csrf_token %}
+Username:<br>
+<input name="username">
+<br><br>
+Password:<br>
+<input name="password" type="password">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+```
+csrf_token -> handle cross site request forgeries in form where the method is POST
+
+#### view
+```python
+from django.http import HttpResponse
+from django.template import loader
+from .models import Users
+
+def index(request):
+  myusers = Users.objects.all().values()
+  template = loader.get_template('page.html')
+  context = {
+    'users': users,
+  }
+  return HttpResponse(template.render(context, request))
+  
+def add(request):
+  template = loader.get_template('add.html')
+  return HttpResponse(template.render({}, request))
+
+def addrecord(request):
+    x= request.POST['username']
+    y= request.POST['password']
+    user = Member(username=x, password=y)
+    user.save()
+    return HttpResponseRedirect(reverse('index'))
+```
+
+#### urls
+int the urls file
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = {
+    path('', views.idex, name='index'),
+    path('add/', views.add, name='add'),
+    path('add/addrecord', views.addrecord, name='addrecord'), #the action of the previous form
+    path('delete/<int:id>', views.delete, name='delete'), 
+}
+
+```
