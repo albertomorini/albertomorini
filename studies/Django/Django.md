@@ -241,3 +241,50 @@ urlpatterns = {
 }
 
 ```
+
+
+
+### update record
+
+in the page.html
+```html
+<h1>Members</h1>
+
+<table border="1">
+{% for x in mymembers %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.username }}</td>
+<td><a href="delete/{{ x.id }}">delete</a>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add User</a>
+</p>
+```
+
+views
+```python
+from django.http import HttpResponse, HttpResponseRedirect
+from django.template import loader
+from django.urls import reverse
+from .models import Members
+
+def update(request, id):
+  myuser = Users.objects.get(id=id)
+  template = loader.get_template('update.html')
+  context = {
+    'myuser': myuser,
+  }
+  return HttpResponse(template.render(context, request))
+
+def updaterecord(request, id):
+  username = request.POST['username']
+
+  user = Users.objects.get(id=id)
+  user.username = username
+  user.save()
+  return HttpResponseRedirect(reverse('index'))
+```
