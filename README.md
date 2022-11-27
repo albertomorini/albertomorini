@@ -3,7 +3,7 @@
 ♊️ Born in June of 1999  <br/>
 🎓 Doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31) <br/>
 🎬 Cinema enthusiast <br/>
-☕️ Coffee lover <br/>
+☕️ Coffee addicted <br/>
 💿 HipHop expert <br/>
 💻 Nerd on my free time <br/>
 🏓 Fitness lover 24/7 <br/>
