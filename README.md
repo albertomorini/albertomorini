@@ -17,14 +17,19 @@
 
 **Languages**: IT/EN
 
-**IT favourite topics** *(w/ experiences)*:
-- Full-stack *(NodeJS, ReactJS/ReactNative, Ionic, Apache Cordova)*
-- Data science *(R, Python)*
-- Web Serivices *(SOAP/REST)*
-- Unix *(MacOS, Linux)*
-- Networking and cybersecurity *(Wireshark, PiHole)*
-- Self-host software *(PLEX, Jellyfin, NextCloud, Sonarr)*
-- SQL *(mySql, Postgresql)*
+
+
+**My favourite IT's topics**, not my all knowledge (see cv for that):
+
+- Software developing
+	- Full-stack (NodeJs, ReactJS/ReactNative, Cordova, IonicFramework)
+    - Web Serivices (SOAP/REST)
+    - Single app/script (Python)
+- Automation scripts (Python, shell, bash)
+- Data science (R, Python)
+- Unix (MacOS, Linux)
+- Networking and cybersecurity (Wireshark, PiHole)
+- Self-host software (PLEX, Jellyfin, NextCloud, Sonarr)
 
 
 ## Contact me
