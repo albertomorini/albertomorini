@@ -20,3 +20,8 @@ docker run -d \
     -e PROXY_LOCATION="pi.hole" \
     -e FTLCONF_LOCAL_IPV4="127.0.0.1" \
     pihole/pihole:latest
+
+
+## MongoDB
+
+## docker run -d -p 27017:27017 --name myMongo -v mongo-data:/data/db mongo:latest
