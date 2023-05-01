@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct circleImage: View {
+    
+    var image : Image
+    
     var body: some View {
-        Image("mac.spring")
-            .resizable(resizingMode: .stretch)
+        image.clipShape(Circle())
             .clipShape(Circle())
             .overlay{
                 Circle().stroke(.green,lineWidth: 4 )
@@ -22,6 +24,6 @@ struct circleImage: View {
 
 struct circleImage_Previews: PreviewProvider {
     static var previews: some View {
-        circleImage()
+        circleImage(image: Image("turtlerock")) //parametric -> we pass turtle rock to the costructor
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 
-struct Landmark: Hashable, Codable { //Codable -> makes easier to move data between the structure and data file
+struct Landmark: Hashable, Codable, Identifiable { //Codable -> makes easier to move data between the structure and data file
 
     var id: Int
 
@@ -34,13 +34,13 @@ struct Landmark: Hashable, Codable { //Codable -> makes easier to move data betw
     
     var locationCoordinate: CLLocationCoordinate2D{
         CLLocationCoordinate2D(
-            latitude: coordinates.lat ,
-            longitude: coordinates.lon
+            latitude: coordinates.latitude ,
+            longitude: coordinates.longitude
         )
     }
     
     struct Coordinates: Hashable,Codable{
-        var lat: Double
-        var lon: Double
+        var latitude: Double
+        var longitude: Double
     }
 }
