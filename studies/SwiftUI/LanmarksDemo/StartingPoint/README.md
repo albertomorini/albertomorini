@@ -1,3 +1,7 @@
-# Completed Project: Building Lists and Navigation
 
-Explore the completed project for the [Building Lists and Navigation](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) tutorial.
+
+# My notes on SwiftUI learning apple's project
+
+Starts with LandsmarkApp.swift (the entry point like program.cs or app.js).
+
+Call the content view --> Call the class of the app, LandkmarkList.swift

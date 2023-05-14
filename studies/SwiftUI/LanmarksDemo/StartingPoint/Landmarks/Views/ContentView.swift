@@ -7,13 +7,13 @@ A view showing the list of landmarks.
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View { //declare the behaviour
     var body: some View {
-        LandmarkList()
+        LandmarkList() //we call the LandmarkList 
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider { //declare the preview
     static var previews: some View {
         ContentView()
     }
