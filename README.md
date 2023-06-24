@@ -12,18 +12,14 @@
 <a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> 🇮🇹 Guarda il mio CV</a>
 
 
-## Knowledges:
+## What I do:
 
-**Languages**: IT/EN
-
-**What I do**:
 - Solution architect
 - Fullstack developing (NodeJS, React, ReactNative/Ionic Framework)
 - Web Services (REST)
 - Single app/script (Python)
 - Data science (R, Python)
 - Automation scripts (Python, shell/bash)
-
 
 
 ## Contact me
