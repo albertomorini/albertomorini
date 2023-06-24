@@ -3,7 +3,6 @@
 ♊️ Born in June of 1999  <br/>
 🎓 Doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31) <br/>
 🎬 Cinema enthusiast <br/>
-☕️ Coffee addicted <br/>
 💿 HipHop expert <br/>
 💻 Nerd on my free time <br/>
 🏓 Fitness lover 24/7 <br/>
@@ -17,19 +16,14 @@
 
 **Languages**: IT/EN
 
-
-
-**My favourite IT's topics**, not my all knowledge (see cv for that):
-
-- Software developing
-	- Full-stack (NodeJs, ReactJS/ReactNative, Cordova, IonicFramework)
-    - Web Serivices (SOAP/REST)
-    - Single app/script (Python)
-- Automation scripts (Python, shell, bash)
+**What I do**:
+- Solution architect
+- Fullstack developing (NodeJS, React, ReactNative/Ionic Framework)
+- Web Services (REST)
+- Single app/script (Python)
 - Data science (R, Python)
-- Unix (MacOS, Linux)
-- Networking and cybersecurity (Wireshark, PiHole)
-- Self-host software (PLEX, Jellyfin, NextCloud, Sonarr)
+- Automation scripts (Python, shell/bash)
+
 
 
 ## Contact me
