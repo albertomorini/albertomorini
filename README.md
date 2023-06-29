@@ -14,8 +14,8 @@
 
 ## What I do:
 
-- Solutions architect
 - Fullstack developing (NodeJS, React, ReactNative/Ionic Framework)
+- Solutions/software architect
 - Automation scripts (Python, shell/bash)
 - Web Services (REST)
 - Data science (R, Python)
