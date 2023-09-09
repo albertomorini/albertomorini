@@ -1,25 +1,28 @@
+<style>
+    img{
+        width: 390px;
+        height: 390px;
+    }
+</style>
 # Dr. Alberto Morini
 
-♊️ Born in June of 1999  <br/>
-🎓 Doctor in Internet Of Things, Big Data & Web at University of Udine (class L-31) <br/>
-🎬 Cinema enthusiast <br/>
-💿 HipHop expert <br/>
-💻 Nerd on my free time <br/>
-🏓 Fitness lover 24/7 <br/>
+- Fullstack developer
+- Software architect and analyst
+- Software integrator (with PLCs, stand alone app)
+- CRM/ERP developer and consultant 
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini-eng.pdf'> 🇬🇧 View my CV</a>
+In my private life, I've got a tons of hobbies, like fitness, R&B/Hip-Hop music, cinema and bricolage.
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> 🇮🇹 Guarda il mio CV</a>
+I'm a very very positive and energy person, which love the rain and grey days.
+
+Byee :)
+
+------
+
+<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> View my CV</a>
 
 
-## What I do:
-
-- Fullstack developing (NodeJS, React, ReactNative/Ionic Framework)
-- Solutions/software architect
-- Automation scripts (Python, shell/bash)
-- Web Services (REST)
-- Data science (R, Python)
-
+------
 
 ## Contact me
 - <a href='https://albertomorini.github.io'> Website</a>
