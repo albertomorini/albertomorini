@@ -13,7 +13,7 @@ Byee :)
 
 ------
 
-<a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> View my CV</a>
+>  <a href='https://albertomorini.github.io/docs/cv_AlbertoMorini.pdf'> VIEW MY CV</a>
 
 
 ------
