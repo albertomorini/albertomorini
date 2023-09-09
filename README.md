@@ -1,9 +1,3 @@
-<style>
-    img{
-        width: 390px;
-        height: 390px;
-    }
-</style>
 # Dr. Alberto Morini
 
 - Fullstack developer
