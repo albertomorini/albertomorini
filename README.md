@@ -1,5 +1,7 @@
 # Dr. Alberto Morini
 
+Born in June of 1999
+
 - Fullstack developer
 - Software architect and analyst
 - Software integrator (with PLCs, stand alone app)
