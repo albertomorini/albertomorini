@@ -3,23 +3,23 @@ import requests
 import os
   
 # CREATE FOLDER
-def folder_create(images):
-    try:
-        folder_name = input("Enter Folder Name:- ")
-        # folder creation
-        os.mkdir(folder_name)
+def folder_create(c,images):
+    # try:
+    #     folder_name = input("Enter Folder Name:- ")
+    #     # folder creation
+    #     os.mkdir(folder_name)
   
-    # if folder exists with that name, ask another name
-    except:
-        print("Folder Exist with that name!")
-        folder_create()
+    # # if folder exists with that name, ask another name
+    # except:
+    #     print("Folder Exist with that name!")
+    #     folder_create()
   
     # image downloading start
-    download_images(images, folder_name)
+    download_images(c,images, "UltraMega")
   
   
 # DOWNLOAD ALL IMAGES FROM THAT URL
-def download_images(images, folder_name):
+def download_images(c, images, folder_name):
     
     # intitial count is zero
     count = 0
@@ -75,7 +75,7 @@ def download_images(images, folder_name):
                 except UnicodeDecodeError:
   
                     # After checking above condition, Image Download start
-                    with open(f"{folder_name}/images{i+1}.jpg", "wb+") as f:
+                    with open(f"{folder_name}/{c}images{i+1}.jpg", "wb+") as f:
                         f.write(r)
   
                     # counting number of image downloaded
@@ -94,7 +94,7 @@ def download_images(images, folder_name):
             print(f"Total {count} Images Downloaded Out of {len(images)}")
   
 # MAIN FUNCTION START
-def main(url):
+def main(c,url):
     
     # content of URL
     r = requests.get(url)
@@ -106,11 +106,17 @@ def main(url):
     images = soup.findAll('img')
   
     # Call folder create function
-    folder_create(images)
+    folder_create(c, images)
   
   
 # take url
 url = input("Enter URL:- ")
   
 # CALL MAIN FUNCTION
-main(url)
+main(1,url)
+
+
+# for i in range(1,66):
+#     main(i,"https://readcomic.me/comic/ultramega-by-james-harren/issue-1/"+str(i))
+
+#main(67,"https://readcomic.me/comic/ultramega-by-james-harren/issue-1/67")

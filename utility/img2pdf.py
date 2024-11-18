@@ -8,6 +8,7 @@ def scanFolder(path):
         directories.sort()
         files.sort()
         for name in files:
+            print(name)
             if(name!= ".DS_Store"):
                 dictFile.append(str(os.path.join(root, name)))
 
