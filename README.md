@@ -12,7 +12,7 @@ Born in June of 1999
 even native mobile app for Android)
 - **CRM Specialist**: extension developer (C#, API, JavaScript) and consultant
 - **ERP Integrator**: with third software (*i.e. Shopify, PLC, customs CRM/WMS, and whole WebAPI
-world)
+world*)
 
 >  <a href='https://albertomorini.github.io/docs/AlbertoMorini.pdf'> VIEW MY CV (and reach me out ;] )</a>
 
