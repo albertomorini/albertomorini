@@ -14,7 +14,7 @@ even native mobile app for Android)
 - **ERP Integrator**: with third software (*i.e. Shopify, PLC, customs CRM/WMS, and whole WebAPI
 world*)
 
->  <a href='https://albertomorini.github.io/docs/AlbertoMorini.pdf'> VIEW MY CV (and reach me out ;] )</a>
+>  <a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'> VIEW MY CV (and reach me out ;] )</a>
 
 ## EDUCATION
 
