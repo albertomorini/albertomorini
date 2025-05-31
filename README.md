@@ -5,6 +5,15 @@ Born in June of 1999
 > Senior full stack developer and software architect
 
 
+## EDUCATION
+
+- **2018**: High School degree at I.T.T. Vittorio Veneto in Computer Science and telecommunication with
+score of 80/100
+- **2022**: Bachelor Degree at University of Udin, in Internet of Things, Big Data & Web (branch of Computer
+Science, class L-31) with score of 92/110.
+- **Since Oct. 2023**: Master Degree at University of Padua in Computer Science (class LM-18) as a non
+attending student.
+
 ## WORK
 
 
@@ -15,16 +24,6 @@ even native mobile app for Android)
 world*)
 
 >  <a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'> VIEW MY CV (and reach me out ;] )</a>
-
-## EDUCATION
-
-
-- **2018**: High School degree at I.T.T. Vittorio Veneto in Computer Science and telecommunication with
-score of 80/100
-- **2022**: Bachelor Degree at University of Udin, in Internet of Things, Big Data & Web (branch of Computer
-Science, class L-31) with score of 92/110.
-- **Since Oct. 2023**: Master Degree at University of Padua in Computer Science (class LM-18) as a non
-attending student.
 
 ## PERSONAL STUFF
 
