@@ -37,16 +37,7 @@ I'm a very very positive and energy person, which love the rain and grey days.
 Byee :)
 
 
-<<<<<<< HEAD
 ## CONTACTS
-=======
->  <a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'> VIEW MY CV</a>
-
-
-------
-
-## Contact me
->>>>>>> 26c5170 (updated cv)
 - <a href='https://albertomorini.github.io'> Website</a>
 - <a href='mailto:99morini@gmail.com'> Email me </a>
 - <a href="https://t.me/albertomorini">Telegram</a>
