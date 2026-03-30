@@ -6,6 +6,12 @@ Born in June of 1999
 
 <a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'>MY CV</a>
 
+## CONTACTS
+- <a href='https://albertomorini.github.io'> Website</a>
+- <a href='mailto:99morini@gmail.com'> Email me </a>
+- <a href="https://t.me/albertomorini">Telegram</a>
+
+
 ## EDUCATION
 
 - MSc in Computer Science – University of Padua, Italy (LM-18) | as non attending student | Since Oct 2023
@@ -13,7 +19,6 @@ Born in June of 1999
 - High School Diploma in Computer Science & Telecommunications – I.T.T. Vittorio Veneto, Italy | 2018 | GPA: 80/100
 
 ## EXPERIENCES
-
 
 - **Since 06/2022 at NordEst Informatica S.r.l. (System Integrator for TeamSystem S.p.A.)**:
   - **Fullstack Developer & Software Architect**:
@@ -30,7 +35,8 @@ Born in June of 1999
 - **03/2022 - 05/2022 Projecta S.r.l.: - University partnership as developer in NodeJS and SQL-Server**
   - Developed and designed backend solutions for internal project using Node.js and SQL Server.
 
-## CONTACTS
-- <a href='https://albertomorini.github.io'> Website</a>
-- <a href='mailto:99morini@gmail.com'> Email me </a>
-- <a href="https://t.me/albertomorini">Telegram</a>
+## Others
+
+- self hosted enthusiast
+- sport addicted
+- cinema lover, hiphop heads
