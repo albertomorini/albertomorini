@@ -1,122 +1,144 @@
-from bs4 import *
+from pathlib import Path
+from urllib.parse import urljoin, urlparse
 import requests
-import os
-  
-# CREATE FOLDER
-def folder_create(c,images):
-    # try:
-    #     folder_name = input("Enter Folder Name:- ")
-    #     # folder creation
-    #     os.mkdir(folder_name)
-  
-    # # if folder exists with that name, ask another name
-    # except:
-    #     print("Folder Exist with that name!")
-    #     folder_create()
-  
-    # image downloading start
-    download_images(c,images, "UltraMega")
-  
-  
-# DOWNLOAD ALL IMAGES FROM THAT URL
-def download_images(c, images, folder_name):
-    
-    # intitial count is zero
-    count = 0
-  
-    # print total images found in URL
-    print(f"Total {len(images)} Image Found!")
-  
-    # checking if images is not zero
-    if len(images) != 0:
-        for i, image in enumerate(images):
-            # From image tag ,Fetch image Source URL
-  
-                        # 1.data-srcset
-                        # 2.data-src
-                        # 3.data-fallback-src
-                        # 4.src
-  
-            # Here we will use exception handling
-  
-            # first we will search for "data-srcset" in img tag
-            try:
-                # In image tag ,searching for "data-srcset"
-                image_link = image["data-srcset"]
-                  
-            # then we will search for "data-src" in img 
-            # tag and so on..
-            except:
-                try:
-                    # In image tag ,searching for "data-src"
-                    image_link = image["data-src"]
-                except:
-                    try:
-                        # In image tag ,searching for "data-fallback-src"
-                        image_link = image["data-fallback-src"]
-                    except:
-                        try:
-                            # In image tag ,searching for "src"
-                            image_link = image["src"]
-  
-                        # if no Source URL found
-                        except:
-                            pass
-  
-            # After getting Image Source URL
-            # We will try to get the content of image
-            try:
-                r = requests.get(image_link).content
-                try:
-  
-                    # possibility of decode
-                    r = str(r, 'utf-8')
-  
-                except UnicodeDecodeError:
-  
-                    # After checking above condition, Image Download start
-                    with open(f"{folder_name}/{c}images{i+1}.jpg", "wb+") as f:
-                        f.write(r)
-  
-                    # counting number of image downloaded
-                    count += 1
-            except:
-                pass
-  
-        # There might be possible, that all
-        # images not download
-        # if all images download
-        if count == len(images):
-            print("All Images Downloaded!")
-              
-        # if all images not download
-        else:
-            print(f"Total {count} Images Downloaded Out of {len(images)}")
-  
-# MAIN FUNCTION START
-def main(c,url):
-    
-    # content of URL
-    r = requests.get(url)
-  
-    # Parse HTML Code
-    soup = BeautifulSoup(r.text, 'html.parser')
-  
-    # find all images in URL
-    images = soup.findAll('img')
-  
-    # Call folder create function
-    folder_create(c, images)
-  
-  
-# take url
-url = input("Enter URL:- ")
-  
-# CALL MAIN FUNCTION
-main(1,url)
+from bs4 import BeautifulSoup
 
 
-# for i in range(1,66):
-#     main(i,"https://readcomic.me/comic/ultramega-by-james-harren/issue-1/"+str(i))
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,"
+        "application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+}
 
-#main(67,"https://readcomic.me/comic/ultramega-by-james-harren/issue-1/67")
+
+def get_image_url(img_tag):
+    """
+    Extract best possible image URL from an <img> tag.
+    """
+
+    for attr in ("data-srcset", "data-src", "data-fallback-src", "src"):
+        value = img_tag.get(attr)
+
+        if value:
+            # srcset may contain multiple URLs
+            if attr == "data-srcset":
+                return value.split(",")[0].split()[0]
+
+            return value
+
+    return None
+
+
+def get_extension(url):
+    """
+    Extract file extension from URL.
+    """
+
+    path = urlparse(url).path
+    ext = Path(path).suffix.lower()
+
+    if ext in [".jpg", ".jpeg", ".png", ".gif", ".webp"]:
+        return ext
+
+    return ".jpg"
+
+
+def download_images(url, folder_name="downloads"):
+    folder = Path(folder_name)
+    folder.mkdir(parents=True, exist_ok=True)
+
+    session = requests.Session()
+    session.headers.update(HEADERS)
+
+    print(f"Fetching page: {url}")
+
+    try:
+        response = session.get(
+            url,
+            timeout=15,
+            headers={
+                **HEADERS,
+                "Referer": "https://www.google.com/",
+                "Accept": (
+                    "text/html,application/xhtml+xml,"
+                    "application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+                ),
+                "Accept-Language": "en-US,en;q=0.5",
+                "Connection": "keep-alive",
+                "Upgrade-Insecure-Requests": "1",
+            },
+        )
+        
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Failed to fetch page: {e}")
+        return
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    # FIXED: findAll -> find_all
+    images = soup.find_all("img")
+
+    print(f"Found {len(images)} image tags")
+
+    downloaded = 0
+    seen = set()
+
+    for idx, img in enumerate(images, start=1):
+
+        image_url = get_image_url(img)
+
+        if not image_url:
+            continue
+
+        # Convert relative URLs to absolute
+        image_url = urljoin(url, image_url)
+
+        # Skip duplicates
+        if image_url in seen:
+            continue
+
+        seen.add(image_url)
+
+        try:
+            img_response = session.get(image_url, timeout=15)
+
+            if img_response.status_code != 200:
+                continue
+
+            content_type = img_response.headers.get("content-type", "")
+
+            if "image" not in content_type:
+                continue
+
+            extension = get_extension(image_url)
+
+            filename = folder / f"image_{idx}{extension}"
+
+            with open(filename, "wb") as f:
+                f.write(img_response.content)
+
+            downloaded += 1
+
+            print(f"[{downloaded}] Saved: {filename.name}")
+
+        except requests.RequestException as e:
+            print(f"Failed to download {image_url}: {e}")
+
+    print(f"\nDownloaded {downloaded} images")
+
+
+if __name__ == "__main__":
+    download_images(
+        "https://www.zipcomic.com/the-boys-issue-1",
+        "1"
+    )
