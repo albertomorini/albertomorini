@@ -1,12 +1,7 @@
 # Dr. Alberto Morini
 > Senior full stack developer and software architect
 
-<a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'>MY CV</a>
-
-- <a href='https://albertomorini.github.io'> Website</a>
-- <a href='mailto:albmor.dev@gmail.com'>Email</a>
-- <a href="https://t.me/albertomorini">Telegram</a>
-
+<a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'>MY CV</a> | <a href='https://albertomorini.github.io'> Website</a> | <a href='mailto:albmor.dev@gmail.com'>Email</a> |  <a href="https://t.me/albertomorini">Telegram</a>
 
 ## EDUCATION
 
