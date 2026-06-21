@@ -12,11 +12,11 @@
 ## EXPERIENCES
 
 - **Since 06/2022 at NordEst Informatica S.r.l. (System Integrator for TeamSystem S.p.A.)**:
-  - **Fullstack Developer & Software Architect**
-  - **CRM Specialist**
-  - **ERP System Integrator**:
+  - *Fullstack Developer & Software Architect*
+  - *CRM Specialist*
+  - *ERP System Integrator*
 - **03/2022 - 05/2022 Projecta S.r.l.: - University partnership as developer in NodeJS and SQL-Server**
-  - **Backend Developer** using Node.js and SQL Server.
+  - *Backend Developer* using Node.js and SQL Server.
 
 ## Others
 
