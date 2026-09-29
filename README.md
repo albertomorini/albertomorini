@@ -5,7 +5,7 @@
 
 ## EDUCATION
 
-- MSc in Computer Science – University of Padua, Italy (LM-18) | as non attending student | Since Oct 2023
+- MSc in Computer Science – University of Padua, Italy (LM-18) | as non attending student | 2026 | GPA: 103/110
 - BSc in Internet of Things, Big Data & Web (Computer Science, L-31) – University of Udine, Italy | 2022 | GPA: 92/110
 - High School Diploma in Computer Science & Telecommunications – I.T.T. Vittorio Veneto, Italy | 2018 | GPA: 80/100
 
