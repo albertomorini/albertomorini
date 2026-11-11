@@ -1,13 +1,13 @@
 # Dr. Alberto Morini
 > Senior full stack developer and software architect
 
-<a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf'>MY CV</a> | <a href='https://albertomorini.github.io'> Website</a> | <a href='mailto:albmor.dev@gmail.com'>Email</a> |  <a href="https://t.me/albertomorini">Telegram</a>
+<a href='https://albertomorini.github.io/docs/AlbertoMorini_CV.pdf](https://raw.githubusercontent.com/albertomorini/albertomorini.github.io/main/assets/docs/AlbertoMorini_CV.pdf'>MY CV</a> | <a href='https://morini.dev> Website</a> | <a href='mailto:alberto@morini.dev'>Email</a> |  <a href="https://t.me/albertomorini">Telegram</a>
 
 ## EDUCATION
 
-- MSc in Computer Science – University of Padua, Italy (LM-18) | as non attending student | 2026 | GPA: 103/110
-- BSc in Internet of Things, Big Data & Web (Computer Science, L-31) – University of Udine, Italy | 2022 | GPA: 92/110
-- High School Diploma in Computer Science & Telecommunications – I.T.T. Vittorio Veneto, Italy | 2018 | GPA: 80/100
+- MSc in Computer Science – University of Padua, Italy (LM-18) | as non attending student | 2026 | SCORE: 103/110
+- BSc in Internet of Things, Big Data & Web (Computer Science, L-31) – University of Udine, Italy | 2022 | SCORE: 92/110
+- High School Diploma in Computer Science & Telecommunications – I.T.T. Vittorio Veneto, Italy | 2018 | SCORE: 80/100
 
 ## EXPERIENCES
 
